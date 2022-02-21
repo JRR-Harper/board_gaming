@@ -1,6 +1,13 @@
 import React from 'react';
 import Game from './Game'
 
+import Styled from 'styled-components'
+
+const StyledDiv = Styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly
+`
 
 const GamesList = ({games}) => {
 
@@ -18,9 +25,9 @@ const GamesList = ({games}) => {
 
 
   return (
-    <div >
+    <StyledDiv >
       {nodeList}
-    </div>
+    </StyledDiv>
     
   )
 }

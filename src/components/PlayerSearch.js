@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 
 const PlayerSearch = ({handleUserSubmit}) => {
-  const [playerName, setPlayerName] = useState("");
+  const [playerName, setPlayerName] = useState("earthchild316");
 
   const handleInputChange = (evt) => {
     setPlayerName(evt.target.value)
