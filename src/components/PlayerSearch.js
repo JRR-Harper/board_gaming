@@ -1,18 +1,25 @@
 import React, {useState} from 'react'
 
-const PlayerSearch = () => {
-    const [playerName, setPlayerName] = useState("");
+const PlayerSearch = ({handleUserSubmit}) => {
+  const [playerName, setPlayerName] = useState("");
 
-    const handleInputChange = (evt) => {
-        setPlayerName(evt.target.value)
-    }
+  const handleInputChange = (evt) => {
+    setPlayerName(evt.target.value)
+  }
 
-    return (
-        <form>
-            <label for="player-name-input"></label>
-            <input id = "player-name-input" type="text" value={playerName} onChange={handleInputChange} />
-        </form>
-    )
+  const handleSubmit = (evt) => {
+    evt.preventDefault();
+    handleUserSubmit(playerName)
+    setPlayerName("")
+  }
+
+  return (
+    <form>
+      <label htmlFor="player-name-input"></label>
+        <input id = "player-name-input" type="text" value={playerName} onChange={handleInputChange} />
+        <input type="submit" onClick={handleSubmit} value="user submit"/>
+    </form>
+  )
 
 }
 

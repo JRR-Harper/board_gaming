@@ -4,7 +4,7 @@ import Container from './containers/GamesContainer';
 
 function App() {
   return (
-      <Container></Container>
+      <Container/>
   );
 }
 

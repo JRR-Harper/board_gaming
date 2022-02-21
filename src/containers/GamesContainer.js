@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react'
+import GamesList from '../components/GamesList'
 import PlayerSearch from '../components/PlayerSearch'
 
 const Container = () => {
@@ -8,20 +9,26 @@ const Container = () => {
 
 
     useEffect(() => {
-        getDefaultUser()
-    }, [])
+        getUser()
+    }, [userName])
 
 
-    const getDefaultUser = async () => {
-        const result = await fetch(`https://bgg-json.azurewebsites.net/collection/earthchild316`)
+    const getUser = async (user) => {
+      if (userName) {
+        const result = await fetch(`https://bgg-json.azurewebsites.net/collection/${userName}`)
         const games = await result.json()
         setUserGames(games)
+      }
+    }
+
+    const handleSubmit = (submittedUserName) => {
+      setUserName(submittedUserName);
     }
 
     return (
         <>
-            <PlayerSearch/>
-            <h1>"Hello"</h1>
+            <PlayerSearch handleUserSubmit={handleSubmit}/>
+            <GamesList games={userGames}></GamesList>
         </>
     )
 }
