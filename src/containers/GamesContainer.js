@@ -1,8 +1,10 @@
 import React, {useState, useEffect} from 'react'
+import PlayerSearch from '../components/PlayerSearch'
 
 const Container = () => {
 
-    const [player, setPlayer] = useState(null)
+    const [userGames, setUserGames] = useState(null)
+    const [userName, setUserName] = useState(null)
 
 
     useEffect(() => {
@@ -12,13 +14,15 @@ const Container = () => {
 
     const getDefaultUser = async () => {
         const result = await fetch(`https://bgg-json.azurewebsites.net/collection/earthchild316`)
-        const user = await result.json()
-        setPlayer(user)
+        const games = await result.json()
+        setUserGames(games)
     }
 
     return (
-        <h1>"Hello"</h1>
-    
+        <>
+            <PlayerSearch/>
+            <h1>"Hello"</h1>
+        </>
     )
 }
 
