@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/board_gaming/static/css/main.72fcfc05.chunk.css",
+    "main.js": "/board_gaming/static/js/main.9ec9a8d1.chunk.js",
+    "main.js.map": "/board_gaming/static/js/main.9ec9a8d1.chunk.js.map",
+    "runtime-main.js": "/board_gaming/static/js/runtime-main.d20e8d8c.js",
+    "runtime-main.js.map": "/board_gaming/static/js/runtime-main.d20e8d8c.js.map",
+    "static/js/2.d0d8643b.chunk.js": "/board_gaming/static/js/2.d0d8643b.chunk.js",
+    "static/js/2.d0d8643b.chunk.js.map": "/board_gaming/static/js/2.d0d8643b.chunk.js.map",
+    "static/js/3.24c0116a.chunk.js": "/board_gaming/static/js/3.24c0116a.chunk.js",
+    "static/js/3.24c0116a.chunk.js.map": "/board_gaming/static/js/3.24c0116a.chunk.js.map",
+    "index.html": "/board_gaming/index.html",
+    "precache-manifest.f2414f0117b89fc41e2da6f59f615830.js": "/board_gaming/precache-manifest.f2414f0117b89fc41e2da6f59f615830.js",
+    "service-worker.js": "/board_gaming/service-worker.js",
+    "static/css/main.72fcfc05.chunk.css.map": "/board_gaming/static/css/main.72fcfc05.chunk.css.map",
+    "static/js/2.d0d8643b.chunk.js.LICENSE.txt": "/board_gaming/static/js/2.d0d8643b.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d20e8d8c.js",
+    "static/js/2.d0d8643b.chunk.js",
+    "static/css/main.72fcfc05.chunk.css",
+    "static/js/main.9ec9a8d1.chunk.js"
+  ]
+}
